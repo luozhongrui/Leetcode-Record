@@ -1,0 +1,2 @@
+le QUESTION_ID:
+    @cargo test q{{QUESTION_ID}}::test -- --nocapture

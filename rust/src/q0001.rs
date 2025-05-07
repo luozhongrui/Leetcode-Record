@@ -13,9 +13,13 @@ pub mod solution {
     }
 }
 
-fn main() {
-    use solution::two_sum;
-    assert_eq!(vec![0, 1], two_sum(vec![2, 7, 11, 15], 9));
-    assert_eq!(vec![1, 2], two_sum(vec![3, 2, 4], 6));
-    assert_eq!(vec![0, 1], two_sum(vec![3, 3], 6));
+#[cfg(test)]
+mod tests {
+    #[test]
+    fn test() {
+        use super::solution::two_sum;
+        assert_eq!(vec![0, 1], two_sum(vec![2, 7, 11, 15], 9));
+        assert_eq!(vec![1, 2], two_sum(vec![3, 2, 4], 6));
+        assert_eq!(vec![0, 1], two_sum(vec![3, 3], 6));
+    }
 }
